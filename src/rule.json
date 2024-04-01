@@ -1,0 +1,16 @@
+[
+  {
+    "id" : 1,
+    "priority": 2,
+    "action" : { 
+      "type" : "modifyHeaders",
+      "responseHeaders": [
+        {"header": "content-security-policy", "operation": "set", "value": ""}
+      ]
+    },
+    "condition" : {
+      "urlFilter" : "https*",
+      "resourceTypes" : ["main_frame"]
+    }
+  }
+]
