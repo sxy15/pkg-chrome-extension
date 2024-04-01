@@ -1,9 +1,9 @@
-import clsty from "clsty";
+import logsty from "logsty";
 
-export const green = (message: string) => clsty.bgGreen.white(message)
-export const red = (message: string) => clsty.bgRed.white(message)
-export const blue = (message: string) => clsty.bgBlue.white(message)
-export const log = clsty.log
+export const green = (message: string) => logsty.bgGreen.white(message)
+export const red = (message: string) => logsty.bgRed.white(message)
+export const blue = (message: string) => logsty.bgBlue.white(message)
+export const log = logsty.log
 
 export const injectScript = async (url) => {
   return new Promise((resolve, reject) => {
